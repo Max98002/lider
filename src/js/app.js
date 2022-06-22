@@ -1,8 +1,8 @@
 import * as flsFunctions from "./modules/functions.js";
+import openMenu from "./modules/openMenu.js";
 
 flsFunctions.isWebp();
 
-/*
-import Swiper, { Navigation, Pagination } from 'swiper';
-const swiper = new Swiper();
-*/
+window.addEventListener('DOMContentLoaded', () => {
+  openMenu('.header-menu__btn', '.header-block__left');
+});

@@ -1,0 +1,20 @@
+@media (max-width: 767.98px) {
+  .about {
+    &-wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+    &__image {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 540.98px) {
+  .about {
+    &-counters {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+  }
+}

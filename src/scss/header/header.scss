@@ -1,0 +1,158 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  padding-top: 17px;
+
+  z-index: 100;
+
+  &-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &-block {
+    &__left {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-end;
+    }
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+
+    &__elements {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 25px;
+      font-style: normal;
+      color: #FFFFFF;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &-logo {
+    max-width: 156px;
+  }
+
+  &__btn {
+    margin-bottom: 22px;
+  }
+
+  &-nav {
+    display: flex;
+    align-items: center;
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 24px;
+      }
+    }
+
+    &__link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0px;
+        height: 3px;
+        background: #6CA6C1;
+        transition: width 0.2s;
+      }
+
+      &:hover {
+        &::before {
+          width: 30px;
+        }
+      }
+
+      &_style {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF;
+      }
+      &_arrow {
+        margin-left: 5px;
+        width: 8px;
+        height: 6px;
+      }
+    }
+
+    &_dropdown {
+      position: relative;
+    }
+
+    &-menu {
+      display: none;
+      position: absolute;
+      top: 38px;
+      left: 0;
+      width: 150px;
+      backdrop-filter: blur(10px);
+      padding: 5px 0;
+      z-index: 1;
+      border-radius: 10px;
+
+      &__item {
+        display: flex;
+        width: 100%;
+
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+      }
+
+      &__link {
+        position: relative;
+        width: 100%;
+        padding: 5px 10px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 10px;
+          width: 0px;
+          height: 3px;
+          background: #6CA6C1;
+          transition: width 0.2s;
+        }
+
+        &:hover {
+          &::before {
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  &-menu__btn {
+    display: none;
+  }
+
+}
+
+.header-nav_dropdown:hover .header-nav-menu {
+  display: block;
+}

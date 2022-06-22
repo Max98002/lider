@@ -1,0 +1,29 @@
+.section {
+  margin-bottom: 100px;
+  &-title {
+    margin: 0;
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #3A4661;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 50px;
+    text-align: center;
+    &::before {
+      content: '';
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      width: 30px;
+      height: 3px;
+      background: #6CA6C1;
+      transform: translateX(-50%);
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.contact {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url('../img/contact/contact.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+    right: 0;
+    width: 43.8%;
+    background-color: rgba(#3A4661, 0.6);
+  }
+
+  &-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__title {
+    position: relative;
+    width: 574px;
+    margin: 0;
+    font-family: 'PlayfairDisplay';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 64px;
+    color: #FFFFFF;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -60%;
+      right: 16%;
+      width: 134px;
+      height: 97px;
+      background-image: url('../img/icons/icons.svg#arrow-form');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+    }
+  }
+}

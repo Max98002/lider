@@ -1,0 +1,105 @@
+.programs {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #F5F8F9;
+  &-wrapper {
+    display: grid;
+    grid-template-columns: 480px minmax(200px, 574px);
+    grid-template-rows: 580px;
+    grid-auto-rows: auto;
+    justify-content: space-between;
+  }
+
+  &__title {
+    max-width: 300px;
+    text-align: left;
+
+    &::before {
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+
+  &-info {
+    padding-top: 20px;
+  }
+
+  &-img {
+    overflow: hidden;
+  }
+
+  &-list {
+    display: flex;
+    flex-flow: column;
+    &__item {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding-left: 21px;
+      &:not(:last-child) {
+        margin-bottom: 53px;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background-color: #6CA6C1;
+      }
+    }
+  }
+
+  &-text {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    &__up-text {
+      margin-bottom: 5px;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 18px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #7281A4;
+    }
+
+    &__name {
+      margin-bottom: 3px;
+      font-family: 'Playfair Display';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 32px;
+      color: #3F3F3F;
+    }
+
+    &__bottom {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-flow: row nowrap;
+
+
+      font-size: 18px;
+      color: #7281A4;
+
+      span {
+        &:first-of-type {
+          font-weight: 700;
+          margin-right: 8px;
+        }
+
+        &:last-of-type {
+          margin-left: 8px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

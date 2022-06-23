@@ -1,0 +1,57 @@
+.benefits {
+  &__cards {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 30px;
+  }
+
+  &-card {
+    flex: 2 2 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: #F5F8F9;
+    padding: 52px 35px;
+
+    &__icon {
+      margin-bottom: 32px;
+      width: 36px;
+      height: 36px;
+      min-width: 36px;
+    }
+
+    &__title {
+      max-width: 297px;
+      margin: 0;
+      padding-bottom: 19px;
+      margin-bottom: 20px;
+      font-family: 'PlayfairDisplay';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      color: #3F3F3F;
+    }
+
+    &__text {
+      max-width: 300px;
+      margin: 0;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 21px;
+      color: #3F3F3F;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .benefits {
+    &-card {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

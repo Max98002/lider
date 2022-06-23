@@ -1,5 +1,10 @@
 .section {
   margin-bottom: 100px;
+
+  &__titles {
+    margin-bottom: 50px;
+  }
+
   &-title {
     margin: 0;
 
@@ -13,8 +18,8 @@
 
   &__title {
     position: relative;
-    margin-bottom: 50px;
     text-align: center;
+
     &::before {
       content: '';
       position: absolute;
@@ -24,6 +29,18 @@
       height: 3px;
       background: #6CA6C1;
       transform: translateX(-50%);
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section {
+    &__titles {
+      margin-bottom: 70px;
+    }
+
+    &__title {
+      margin-bottom: 40px;
     }
   }
 }

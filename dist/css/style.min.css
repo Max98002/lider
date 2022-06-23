@@ -582,51 +582,8 @@ ul {
   width: 8px;
   height: 6px;
 }
-.header-nav_dropdown {
-  position: relative;
-}
-.header-nav-menu {
-  display: none;
-  position: absolute;
-  top: 38px;
-  left: 0;
-  width: 150px;
-  backdrop-filter: blur(10px);
-  padding: 5px 0;
-  z-index: 1;
-  border-radius: 10px;
-}
-.header-nav-menu__item {
-  display: flex;
-  width: 100%;
-}
-.header-nav-menu__item:not(:last-child) {
-  margin-bottom: 5px;
-}
-.header-nav-menu__link {
-  position: relative;
-  width: 100%;
-  padding: 5px 10px;
-}
-.header-nav-menu__link::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 10px;
-  width: 0px;
-  height: 3px;
-  background: #6CA6C1;
-  transition: width 0.2s;
-}
-.header-nav-menu__link:hover::before {
-  width: 30px;
-}
 .header-menu__btn {
   display: none;
-}
-
-.header-nav_dropdown:hover .header-nav-menu {
-  display: block;
 }
 
 @media (max-width: 1140px) {
